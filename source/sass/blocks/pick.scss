@@ -1,0 +1,43 @@
+.pick {
+  max-width: 320px;
+  font-family: "Oswald_Medium", "Oswald_Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  &__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    background-color: $basic_grey;
+  }
+
+  &__header {
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+
+  &__text {
+    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special_dark_grey;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic_black;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

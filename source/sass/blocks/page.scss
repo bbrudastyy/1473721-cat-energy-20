@@ -1,0 +1,9 @@
+.page {
+  max-width: 320px;
+  background-color: $basic_white;
+
+  &-header {
+    padding-left: 32px;
+    padding-right: 20px;
+  }
+}

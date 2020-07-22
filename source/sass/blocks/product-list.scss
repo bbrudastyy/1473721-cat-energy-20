@@ -1,0 +1,74 @@
+.product-list {
+  max-width: 320px;
+  font-family: "Oswald_Medium", "Oswald_Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  &__wrapper--global {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    border-top: 1px solid $special_grey-2;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $special_dark-grey-2;
+  }
+
+  &__name,
+  &__info {
+    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: $special_dark_grey;
+  }
+
+  &__btn {
+    background-color: $basic_green;
+    color: $basic_white;
+    font-size: 16px;
+    line-height: 0;
+  }
+
+  &__title--more {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list--more {
+    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: $special_dark_grey;
+  }
+
+  &__btn--more {
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    color: $special_dark_grey;
+    background-color: $basic_grey;
+  }
+}

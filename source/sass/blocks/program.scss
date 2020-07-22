@@ -1,0 +1,30 @@
+.program {
+  max-width: 320px;
+  font-family: "Oswald_Medium", "Oswald_Regular", "Arial", sans-serif;
+  color: $basic_white;
+  background-image: url(../../img/index-background-mobile@1x.jpg);
+
+  &__header {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $basic_white;
+    background-color: $basic_green;
+  }
+}

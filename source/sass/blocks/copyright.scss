@@ -1,0 +1,19 @@
+.copyright {
+  max-width: 320px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: $basic_grey;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: $special_dark_grey;
+  }
+}
