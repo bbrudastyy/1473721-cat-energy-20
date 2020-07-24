@@ -1,0 +1,21 @@
+.action__wrapper {
+  margin-left: 20px;
+}
+
+.action__header {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.action__list {
+  list-style: none;
+  padding: 0;
+}
+
+.action__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $gray--dark;
+}

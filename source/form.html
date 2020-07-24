@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -18,7 +19,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -28,7 +29,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a>
               Подбор программы
             </a>
           </li>
@@ -37,11 +38,12 @@
     </nav>
   </header>
   <main>
-    <form action="https://echo.htmlacademy.ru" method="post" class="program">
-      <div class="program__wrapper">
-        <h2 class="program__header">Подбор программы</h2>
-        <span class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-        <fieldset class="program__cat-info cat-info">
+    <h1 class="vissually-hidden">Форма для заявки на покупку питания</h1>
+    <form action="https://echo.htmlacademy.ru" method="post" class="selection">
+      <div class="selection__wrapper">
+        <h2 class="selection__header">Подбор программы</h2>
+        <span class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
+        <fieldset class="selection__cat-info cat-info">
           <div class="cat-info-wrapper">
             <label for="name"><span class="cat-info__text">Имя:<sup>*</sup></span></label>
             <input type="text" class="cat-info__input" id="name" name="cat-name" placeholder="Барсик" required>
@@ -55,21 +57,21 @@
             <input type="text" class="cat-info__input" id="age" name="cat-age" placeholder="7">
           </div>
         </fieldset>
-        <fieldset class="program__cat-target cat-target">
+        <fieldset class="selection__cat-target cat-target">
           <div class="cat-target-wrapper">
             <input type="radio" class="cat-target__radio" id="slimming" name="cat-target-info" value="slimming">
-            <label for="slimming"><span class="cat-taget__text">Похудение</span></label>
+            <label for="slimming"><span class="cat-target__text">Похудение</span></label>
           </div>
           <div class="cat-target-wrapper">
             <input type="radio" class="cat-target__radio" id="mass" name="cat-target-info" value="mass">
-            <label for="mass"><span class="cat-taget__text">Набор массы</span></label>
+            <label for="mass"><span class="cat-target__text">Набор массы</span></label>
           </div>
           <div class="cat-target-wrapper">
             <input type="radio" class="cat-target__radio" id="help" name="cat-target-info" value="help">
-            <label for="help"><span class="cat-taget__text"> Не знаю (Нужен ваш совет)</span></label>
+            <label for="help"><span class="cat-target__text"> Не знаю (Нужен ваш совет)</span></label>
           </div>
         </fieldset>
-        <fieldset class="program__cat-owner cat-owner">
+        <fieldset class="selection__cat-owner cat-owner">
           <legend class="cat-owner__header"> Контактные данные (владельца кота)</legend>
           <div class="cat-owner__wrapper">
             <label for="cat-owner-name"><span class="cat-owner__text">E-mail:<sup>*</sup></span></label>
@@ -82,7 +84,7 @@
               placeholder="8 (960) 900-60-90" required>
           </div>
         </fieldset>
-        <fieldset class="program__comment comment">
+        <fieldset class="selection__comment comment">
           <legend class="comment__header">Комментарий</legend>
           <label class="visually-hidden" for="comment-text"></label>
           <div class="comment__wrapper">
@@ -90,26 +92,26 @@
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="program__additionally additionally">
+        <fieldset class="selection__additionally additionally">
           <legend class="additionally__header">Дополнительно</legend>
-          <div class="additionally-check__wrapper">
+          <div class="additionally__wrapper">
             <input type="checkbox" class="additionally__check" id="sugar" name="Sugar-substitute">
             <label for="sugar"><span class="additionally__text">Cахарозаменитель</span></label>
           </div>
-          <div class="additionally-check__wrapper">
+          <div class="additionally__wrapper">
             <input type="checkbox" class="additionally__check" id="water" name="water">
             <label for="water"><span class="additionally__text">Питьевая вода</span></label>
           </div>
-          <div class="additionally-check__wrapper">
+          <div class="additionally__wrapper">
             <input type="checkbox" class="additionally__check" id="milk" name="milk">
             <label for="milk"><span class="additionally__text">Молоко</span></label>
           </div>
-          <div class="additionally-check__wrapper">
+          <div class="additionally__wrapper">
             <input type="checkbox" class="additionally__check" id="vitamins" name="vitamins">
             <label for="vitamins"><span class="additionally__text">Витамины</span></label>
           </div>
         </fieldset>
-        <button type="submit" class="program-btn">Отправить заявку</button>
+        <button type="submit" class="selection-btn">Отправить заявку</button>
         <p class="required"><sup>*</sup> — Обязательные поля</p>
       </div>
     </form>
@@ -118,9 +120,8 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__cooperation cooperation">
         <div class="cooperation__wrapper">
-          <h2 class="visually-hidden">Сотрудничество</h2>
           <p class="cooperation__header">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <address class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <img src="https://via.map.com" alt="Карта нахождения магазина" width="320" height="362"
           class="cooperation__map">

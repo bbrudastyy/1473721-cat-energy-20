@@ -1,1 +1,14 @@
-// Начните писать стили здесь
+@import "normalize.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "fonts.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/site-list.scss";
+@import "blocks/program.scss";
+@import "blocks/pick.scss";
+@import "blocks/action.scss";
+@import "blocks/cooperation.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/product-list.scss";
