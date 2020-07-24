@@ -1,9 +1,4 @@
 .cooperation {
-  max-width: 320px;
-  font-family: "Oswald_Medium", "Oswald_Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-
   &__wrapper {
     margin-right: 19px;
     margin-left: 19px;
@@ -13,13 +8,13 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: $cooperation_header;
+    color: $black-header;
   }
 
   &__text {
-    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: $special_dark_grey;
+    color: $gray--dark;
   }
 }

@@ -1,0 +1,19 @@
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

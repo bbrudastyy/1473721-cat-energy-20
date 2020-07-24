@@ -1,46 +1,8 @@
 @font-face {
-  font-family: "Oswald_Medium";
-  src: url("../fonts/oswaldmedium.woff") format("woff");
-  src: ("../fonts/oswaldmedium.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald_Medium";
-  src: url("../fonts/oswaldmedium.woff") format("woff");
-  src: ("../fonts/oswaldmedium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Oswald_Medium";
-  src: url("../fonts/oswaldmedium.woff") format("woff");
-  src: ("../fonts/oswaldmedium.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald_Regular";
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald_Regular";
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Oswald_Regular";
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+  font-display: swap;
 }

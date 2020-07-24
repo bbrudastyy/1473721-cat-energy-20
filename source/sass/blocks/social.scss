@@ -1,10 +1,9 @@
 .social {
-  max-width: 320px;
-  background-color: $basic_grey;
+  background-color: $gray--light;
+}
 
-  &__list {
-    list-style: none;
-    border-top: 1px solid $footer-border-color;
-    border-bottom: 1px solid $footer-border-color;
-  }
+.social__list {
+  list-style: none;
+  border-top: 1px solid $gray-border;
+  border-bottom: 1px solid $gray-border;
 }

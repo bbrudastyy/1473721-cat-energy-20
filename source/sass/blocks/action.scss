@@ -1,14 +1,10 @@
 .action {
-  max-width: 320px;
-  font-family: "Oswald_Medium", "Oswald_Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-
   &__wrapper {
     margin-left: 20px;
   }
 
   &__header {
+    font-weight: normal;
     font-size: 36px;
     line-height: 40px;
   }
@@ -19,9 +15,9 @@
   }
 
   &__text {
-    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color: $special_dark_grey;
+    color: $gray--dark;
   }
 }

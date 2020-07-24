@@ -1,15 +1,11 @@
 .product-list {
-  max-width: 320px;
-  font-family: "Oswald_Medium", "Oswald_Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-
   &__wrapper--global {
     margin-left: 20px;
     margin-right: 20px;
   }
 
   &__header {
+    font-weight: normal;
     font-size: 36px;
     line-height: 36px;
   }
@@ -20,55 +16,64 @@
   }
 
   &__item {
-    border-top: 1px solid $special_grey-2;
-  }
-
-  &__link {
-    text-decoration: none;
+    border-top: 1px solid $white--light;
   }
 
   &__title {
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: $special_dark-grey-2;
+    color: $gray--darken;
   }
 
   &__name,
   &__info {
-    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    color: $special_dark_grey;
+    color: $gray--dark;
   }
 
   &__btn {
-    background-color: $basic_green;
-    color: $basic_white;
+    background-color: $green;
+    color: $white;
+    font-weight: normal;
     font-size: 16px;
     line-height: 0;
   }
 
-  &__title--more {
+  &__title-more {
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
   }
 
-  &__list--more {
-    font-family: "Arial", "Oswald_Medium", "Oswald_Regular", sans-serif;
+  &__text-more {
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
-    color: $special_dark_grey;
   }
 
-  &__btn--more {
+  &__list-more {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: $gray--dark;
+  }
+
+  &__btn-more {
+    font-weight: normal;
     font-size: 16px;
     line-height: 0px;
     text-transform: uppercase;
-    color: $special_dark_grey;
-    background-color: $basic_grey;
+    color: $gray--dark;
+    background-color: $gray--light;
   }
 }
