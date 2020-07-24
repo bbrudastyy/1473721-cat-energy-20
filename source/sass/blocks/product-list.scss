@@ -1,79 +1,80 @@
-.product-list {
-  &__wrapper--global {
+.product-list__wrapper {
+
+  &--global {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
 
-  &__header {
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 36px;
-  }
+.product-list__header {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
+.product-list__list {
+  list-style: none;
+  padding: 0;
+}
 
-  &__item {
-    border-top: 1px solid $white--light;
-  }
+.product-list__item {
+  border-top: 1px solid $white--light;
+}
 
-  &__title {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $gray--darken;
-  }
+.product-list__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $gray--darken;
+}
 
-  &__name,
-  &__info {
-    font-family: "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    color: $gray--dark;
-  }
+.product-list__name,
+.product-list__info {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray--dark;
+}
 
-  &__btn {
-    background-color: $green;
-    color: $white;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 0;
-  }
+.product-list__btn {
+  background-color: $green;
+  color: $white;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0;
+}
 
-  &__title-more {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.product-list__title-more {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  &__text-more {
-    font-family: "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-  }
+.product-list__text-more {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
 
-  &__list-more {
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    color: $gray--dark;
-  }
+.product-list__list-more {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $gray--dark;
+}
 
-  &__btn-more {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 0px;
-    text-transform: uppercase;
-    color: $gray--dark;
-    background-color: $gray--light;
-  }
+.product-list__btn-more {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color: $gray--dark;
+  background-color: $gray--light;
 }

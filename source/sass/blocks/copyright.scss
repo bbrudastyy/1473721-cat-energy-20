@@ -2,17 +2,17 @@
   margin-right: 20px;
   margin-left: 20px;
   background-color: $gray--light;
+}
 
-  &__link {
-    text-decoration: none;
-  }
+.copyright__link {
+  text-decoration: none;
+}
 
-  &__title {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: $gray--dark;
-  }
+.copyright__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $gray--dark;
 }

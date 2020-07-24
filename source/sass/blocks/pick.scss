@@ -1,39 +1,37 @@
-.pick {
-  &__wrapper {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+.pick__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
+.pick__list {
+  list-style: none;
+  padding: 0;
+}
 
-  &__item {
-    background-color: $gray--light;
-  }
+.pick__item {
+  background-color: $gray--light;
+}
 
-  &__header {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $black;
-  }
+.pick__header {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+}
 
-  &__text {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: $gray--dark;
-  }
+.pick__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $gray--dark;
+}
 
-  &__link {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-    color: $black;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.pick__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
 }

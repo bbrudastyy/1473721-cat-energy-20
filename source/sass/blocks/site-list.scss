@@ -1,16 +1,16 @@
 .site-list {
   list-style: none;
+}
 
-  &__item {
-    color: $black;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
+.site-list__item {
+  color: $black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-    a {
-      text-decoration: none;
-      color: $black;
-    }
-  }
+.site-list__link {
+  text-decoration: none;
+  color: $black;
 }
