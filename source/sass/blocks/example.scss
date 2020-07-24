@@ -1,0 +1,71 @@
+.example__wrapper {
+  padding-left: 20px;
+  padding-top: 27px;
+}
+
+.example__header {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $black;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $gray--dark;
+}
+
+.example__wrapper-cost {
+  margin-top: 25px;
+}
+
+.example__list {
+  list-style: none;
+  padding: 0;
+}
+
+.example__text-bold {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $black;
+}
+
+.example__text-small {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $gray--dark;
+}
+
+.example__text-change {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__cost {
+  margin-top: 34px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__wrapper-change {
+  margin-top: 42px;
+}
+
+.example__variation {
+  margin-top: 27px;
+}

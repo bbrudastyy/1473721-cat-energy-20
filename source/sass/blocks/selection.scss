@@ -1,0 +1,36 @@
+.selection {
+  padding-left: 19px;
+}
+
+.selection__header {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+}
+
+.selection__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.selection__btn {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+}
+
+.selection__required {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $black;
+}

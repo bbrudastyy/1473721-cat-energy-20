@@ -78,7 +78,7 @@
             <input type="text" class="cat-owner__input" id="cat-owner-name" name="onwer-name"
               placeholder="kuklachev@gmail.com" required>
           </div>
-          <div class="cat-owner-wrapper">
+          <div class="cat-owner__wrapper">
             <label for="cat-owner-phone"><span class="cat-owner__text">Телефон:<sup>*</sup></span></label>
             <input type="text" class="cat-owner__input" id="cat-owner-phone" name="onwer-phone"
               placeholder="8 (960) 900-60-90" required>
@@ -88,7 +88,7 @@
           <legend class="comment__header">Комментарий</legend>
           <label class="visually-hidden" for="comment-text"></label>
           <div class="comment__wrapper">
-            <textarea name="comment-text" id="comment-text" cols="30" rows="10"
+            <textarea class="comment__text" name="comment-text" id="comment-text" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
@@ -111,8 +111,8 @@
             <label for="vitamins"><span class="additionally__text">Витамины</span></label>
           </div>
         </fieldset>
-        <button type="submit" class="selection-btn">Отправить заявку</button>
-        <p class="required"><sup>*</sup> — Обязательные поля</p>
+        <button type="submit" class="selection__btn">Отправить заявку</button>
+        <p class="selection__required"><sup>*</sup> — Обязательные поля</p>
       </div>
     </form>
   </main>

@@ -1,0 +1,45 @@
+.extra-wrapper {
+  padding-left: 20px;
+}
+
+.extra__header {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $black;
+}
+
+.extra__list {
+  list-style: none;
+  border-top: 1px solid $gray--lighten;
+}
+
+.extra-item {
+  border-bottom: 1px solid $gray--lighten;
+}
+
+.extra__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $gray--darken;
+}
+
+.extra__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $gray--dark;
+}
+
+.extra__btn {
+  font-size: 16px;
+  line-height: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $green;
+  color: $white;
+}

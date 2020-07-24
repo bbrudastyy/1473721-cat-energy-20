@@ -1,0 +1,11 @@
+.cat-target {
+  border-bottom: 1px solid $gray-border;
+}
+
+.cat-target__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $gray--darken;
+}
