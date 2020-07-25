@@ -1,0 +1,24 @@
+.cat-owner__header {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.cat-owner__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $gray--dark;
+}
+
+.cat-owner__input {
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $gray--dark;
+  }
+}

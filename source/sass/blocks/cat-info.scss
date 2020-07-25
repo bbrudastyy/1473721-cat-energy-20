@@ -1,0 +1,21 @@
+.cat-info {
+  border-bottom: 1px solid $gray-border;
+}
+
+.cat-info__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $gray--dark;
+}
+
+.cat-info__input {
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $gray--dark;
+  }
+}
