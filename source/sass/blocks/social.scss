@@ -1,5 +1,17 @@
 .social {
+  display: flex;
+  flex-direction: column;
   background-color: $gray--light;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .social__list {
