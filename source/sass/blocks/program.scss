@@ -1,6 +1,15 @@
 .program {
   color: $white;
   background-image: url("../../img/index-background-mobile@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.program__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .program__header {
@@ -8,6 +17,10 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
 }
 
 .program__text {
@@ -16,6 +29,16 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.program__img {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .program__link {
@@ -27,4 +50,8 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }

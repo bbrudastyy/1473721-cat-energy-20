@@ -9,8 +9,34 @@
 }
 
 .action__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.action__item {
+  width: 279px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .action__text {

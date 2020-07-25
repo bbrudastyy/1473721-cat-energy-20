@@ -2,7 +2,34 @@
   background-color: $white;
 }
 
-.page-header {
+.page__header {
+  display: flex;
+  flex-direction: column;
   padding-left: 32px;
   padding-right: 20px;
+}
+
+.page__logo {
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
+
+.page__main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
