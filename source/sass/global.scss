@@ -3,11 +3,7 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
-
-  @media (min-width: $desktop-width) {
-    margin: auto;
-    max-width: 1440px;
-  }
+  margin: auto;
 }
 
 img {
