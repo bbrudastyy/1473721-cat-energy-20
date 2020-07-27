@@ -19,3 +19,10 @@
 .association__logo {
   background-color: $gray--light;
 }
+
+.association__wrapper {
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: $desktop-width;
+  }
+}

@@ -1,6 +1,11 @@
 .product-list__wrapper-global {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: $desktop-width;
+  }
 }
 
 .product-list__header {
