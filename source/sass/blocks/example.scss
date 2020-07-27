@@ -1,6 +1,15 @@
+.example {
+  background-color: $gray--light;
+}
+
 .example__wrapper {
   padding-left: 20px;
   padding-top: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: $desktop-width;
+  }
 }
 
 .example__header {

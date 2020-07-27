@@ -1,5 +1,10 @@
 .extra-wrapper {
   padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: $desktop-width;
+  }
 }
 
 .extra__header {
@@ -11,11 +16,12 @@
 }
 
 .extra__list {
+  padding: 0;
   list-style: none;
   border-top: 1px solid $gray--lighten;
 }
 
-.extra-item {
+.extra__item {
   border-bottom: 1px solid $gray--lighten;
 }
 

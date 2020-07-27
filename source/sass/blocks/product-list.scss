@@ -1,7 +1,10 @@
-.product-list__wrapper {
-  &--global {
-    margin-left: 20px;
-    margin-right: 20px;
+.product-list__wrapper-global {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: $desktop-width;
   }
 }
 
@@ -12,8 +15,17 @@
 }
 
 .product-list__list {
+  display: grid;
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .product-list__item {

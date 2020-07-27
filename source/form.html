@@ -8,36 +8,38 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a href="" class="page-header__logo">
-      <img src="https://via.logo.com" width="33" height="38" alt="Логотип магазина Cat-energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item-active">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a>
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page__header page-header">
+    <div class="page-header__wrapper">
+      <a href="" class="page__logo">
+        <img src="https://via.logo.com" width="33" height="38" alt="Логотип магазина Cat-energy">
+      </a>
+      <nav class="page__main-nav main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item-active">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a>
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main class="page__main">
     <h1 class="vissually-hidden">Форма для заявки на покупку питания</h1>
     <form action="https://echo.htmlacademy.ru" method="post" class="selection">
       <div class="selection__wrapper">
@@ -116,7 +118,7 @@
       </div>
     </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__cooperation cooperation">
         <div class="cooperation__wrapper">
@@ -126,28 +128,36 @@
         <img src="https://via.map.com" alt="Карта нахождения магазина" width="320" height="362"
           class="cooperation__map">
       </div>
-      <div class="page-footer__logo logo">
-        <h2 class="visually-hidden">CatEnergy</h2>
-        <svg>Cat Energy</svg>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vkontakte"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--instagram"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/study" class="copyright__link">
-          <span class="copyright__title">Html Academy</span>
-          <img src="https://via.academy.com" alt="Логотип Html академии" width="27" height="34">
-        </a>
+      <div class="page-footer__association association">
+        <div class="association__wrapper">
+          <h2 class="visually-hidden">CatEnergy в социальных сетях</h2>
+          <div class="association__logo">
+            <svg>Cat Energy</svg>
+          </div>
+          <div class="association__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link social__link--vkontakte"><span class="visually-hidden">Ссылка на
+                    социальную сеть вконтанкте</span></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--instagram"><span class="visually-hidden">Ссылка на
+                    социальную сеть инстаграм</span></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Ссылка на
+                    социальную
+                    сеть фэйсбук</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="association__copyright copyright">
+            <a href="https://htmlacademy.ru/study" class="copyright__link">
+              <span class="copyright__title">Html Academy</span>
+              <img src="#" alt="Логотип HTML Academy" class="copyright__img">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
