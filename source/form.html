@@ -19,12 +19,12 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item-active">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item-active">
+            <li class="site-list__item">
               <a href="catalog.html">
                 Каталог продукции
               </a>
@@ -39,51 +39,55 @@
       </nav>
     </div>
   </header>
-  <main class="page__main">
+  <main>
     <h1 class="vissually-hidden">Форма для заявки на покупку питания</h1>
     <form action="https://echo.htmlacademy.ru" method="post" class="selection">
       <div class="selection__wrapper">
         <h2 class="selection__header">Подбор программы</h2>
         <span class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-        <fieldset class="selection__cat-info cat-info">
-          <div class="cat-info-wrapper">
-            <label for="name"><span class="cat-info__text">Имя:<sup>*</sup></span></label>
-            <input type="text" class="cat-info__input" id="name" name="cat-name" placeholder="Барсик" required>
-          </div>
-          <div class="cat-info-wrapper">
-            <label for="weight"><span class="cat-info__text">Вес:<sup>*</sup></span></label>
-            <input type="text" class="cat-info__input" id="weight" name="cat-weight" placeholder="7" required>
-          </div>
-          <div class="cat-info-wrapper">
-            <label for="age"><span class="cat-info__text">Возраст (лет):</span></label>
-            <input type="text" class="cat-info__input" id="age" name="cat-age" placeholder="7">
-          </div>
-        </fieldset>
-        <fieldset class="selection__cat-target cat-target">
-          <div class="cat-target-wrapper">
-            <input type="radio" class="cat-target__radio" id="slimming" name="cat-target-info" value="slimming">
-            <label for="slimming"><span class="cat-target__text">Похудение</span></label>
-          </div>
-          <div class="cat-target-wrapper">
-            <input type="radio" class="cat-target__radio" id="mass" name="cat-target-info" value="mass">
-            <label for="mass"><span class="cat-target__text">Набор массы</span></label>
-          </div>
-          <div class="cat-target-wrapper">
-            <input type="radio" class="cat-target__radio" id="help" name="cat-target-info" value="help">
-            <label for="help"><span class="cat-target__text"> Не знаю (Нужен ваш совет)</span></label>
-          </div>
-        </fieldset>
+        <div class="selection__wrapper-info-target">
+          <fieldset class="selection__cat-info cat-info">
+            <div class="cat-info-wrapper">
+              <label for="name"><span class="cat-info__text">Имя:<sup>*</sup></span></label>
+              <input type="text" class="cat-info__input" id="name" name="cat-name" placeholder="Барсик" required>
+            </div>
+            <div class="cat-info-wrapper">
+              <label for="weight"><span class="cat-info__text">Вес:<sup>*</sup></span></label>
+              <input type="text" class="cat-info__input" id="weight" name="cat-weight" placeholder="7" required>
+            </div>
+            <div class="cat-info-wrapper">
+              <label for="age"><span class="cat-info__text">Возраст (лет):</span></label>
+              <input type="text" class="cat-info__input" id="age" name="cat-age" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="selection__cat-target cat-target">
+            <div class="cat-target-wrapper">
+              <input type="radio" class="cat-target__radio" id="slimming" name="cat-target-info" value="slimming">
+              <label for="slimming"><span class="cat-target__text">Похудение</span></label>
+            </div>
+            <div class="cat-target-wrapper">
+              <input type="radio" class="cat-target__radio" id="mass" name="cat-target-info" value="mass">
+              <label for="mass"><span class="cat-target__text">Набор массы</span></label>
+            </div>
+            <div class="cat-target-wrapper">
+              <input type="radio" class="cat-target__radio" id="help" name="cat-target-info" value="help">
+              <label for="help"><span class="cat-target__text"> Не знаю (Нужен ваш совет)</span></label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="selection__cat-owner cat-owner">
           <legend class="cat-owner__header"> Контактные данные (владельца кота)</legend>
-          <div class="cat-owner__wrapper">
-            <label for="cat-owner-name"><span class="cat-owner__text">E-mail:<sup>*</sup></span></label>
-            <input type="text" class="cat-owner__input" id="cat-owner-name" name="onwer-name"
-              placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="cat-owner__wrapper">
-            <label for="cat-owner-phone"><span class="cat-owner__text">Телефон:<sup>*</sup></span></label>
-            <input type="text" class="cat-owner__input" id="cat-owner-phone" name="onwer-phone"
-              placeholder="8 (960) 900-60-90" required>
+          <div class="cat-owner__wrapper-data">
+            <div class="cat-owner__wrapper">
+              <label for="cat-owner-name"><span class="cat-owner__text">E-mail:<sup>*</sup></span></label>
+              <input type="text" class="cat-owner__input" id="cat-owner-name" name="onwer-name"
+                placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="cat-owner__wrapper">
+              <label for="cat-owner-phone"><span class="cat-owner__text">Телефон:<sup>*</sup></span></label>
+              <input type="text" class="cat-owner__input" id="cat-owner-phone" name="onwer-phone"
+                placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="selection__comment comment">
@@ -96,25 +100,23 @@
         </fieldset>
         <fieldset class="selection__additionally additionally">
           <legend class="additionally__header">Дополнительно</legend>
-          <div class="additionally__wrapper">
-            <input type="checkbox" class="additionally__check" id="sugar" name="Sugar-substitute">
-            <label for="sugar"><span class="additionally__text">Cахарозаменитель</span></label>
-          </div>
-          <div class="additionally__wrapper">
-            <input type="checkbox" class="additionally__check" id="water" name="water">
-            <label for="water"><span class="additionally__text">Питьевая вода</span></label>
-          </div>
-          <div class="additionally__wrapper">
-            <input type="checkbox" class="additionally__check" id="milk" name="milk">
-            <label for="milk"><span class="additionally__text">Молоко</span></label>
-          </div>
-          <div class="additionally__wrapper">
-            <input type="checkbox" class="additionally__check" id="vitamins" name="vitamins">
-            <label for="vitamins"><span class="additionally__text">Витамины</span></label>
-          </div>
+          <ul class="additionally__list">
+            <li class="additionally__item"><input type="checkbox" class="additionally__check" id="sugar"
+                name="Sugar-substitute">
+              <label for="sugar"><span class="additionally__text">Cахарозаменитель</span></label></li>
+            <li class="additionally__item"><input type="checkbox" class="additionally__check" id="water" name="water">
+              <label for="water"><span class="additionally__text">Питьевая вода</span></label></li>
+            <li class="additionally__item"><input type="checkbox" class="additionally__check" id="milk" name="milk">
+              <label for="milk"><span class="additionally__text">Молоко</span></label></li>
+            <li class="additionally__item"><input type="checkbox" class="additionally__check" id="vitamins"
+                name="vitamins">
+              <label for="vitamins"><span class="additionally__text">Витамины</span></label></li>
+          </ul>
         </fieldset>
+        <div class="selection__submit">
         <button type="submit" class="selection__btn">Отправить заявку</button>
         <p class="selection__required"><sup>*</sup> — Обязательные поля</p>
+        </div>
       </div>
     </form>
   </main>

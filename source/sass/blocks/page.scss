@@ -7,22 +7,6 @@
   flex-direction: column;
   padding-left: 32px;
   padding-right: 20px;
-
-  &--not-index {
-    @media (min-width: $desktop-width) {
-      margin: auto;
-      max-width: $desktop-width;
-    }
-  }
-}
-
-.page__main {
-  &--not-index {
-    @media (min-width: $desktop-width) {
-      margin: auto;
-      max-width: 1440px;
-    }
-  }
 }
 
 .page__logo {

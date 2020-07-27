@@ -4,7 +4,6 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
 
   @media (min-width: $desktop-width) {
-    margin: auto;
     max-width: $desktop-width;
   }
 }

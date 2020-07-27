@@ -1,6 +1,13 @@
 .cooperation__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin-right: 19px;
   margin-left: 19px;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 570px;
+  }
 }
 
 .cooperation__header {

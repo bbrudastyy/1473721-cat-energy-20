@@ -32,6 +32,7 @@
 }
 
 .example__list {
+  display: flex;
   list-style: none;
   padding: 0;
 }
@@ -62,6 +63,7 @@
 }
 
 .example__cost {
+  display: flex;
   margin-top: 34px;
   font-weight: normal;
   font-size: 14px;
@@ -69,6 +71,15 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .example__wrapper-change {
