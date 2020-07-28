@@ -21,6 +21,8 @@
 }
 
 .association__wrapper {
+  margin: auto;
+
   @media (min-width: $desktop-width) {
     margin: auto;
     max-width: $desktop-width;

@@ -2,6 +2,22 @@
   padding-left: 19px;
 }
 
+.selection__wrapper {
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: $desktop-width;
+  }
+}
+
+.selection__wrapper-info-target {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .selection__header {
   font-weight: normal;
   font-size: 36px;
@@ -33,4 +49,17 @@
   line-height: 16px;
   text-align: center;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.selection__submit {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
