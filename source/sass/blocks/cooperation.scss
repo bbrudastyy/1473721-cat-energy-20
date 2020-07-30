@@ -3,23 +3,74 @@
   justify-content: space-between;
   margin-right: 19px;
   margin-left: 19px;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 71px;
+    margin-left: 71px;
+    padding-top: 66px;
+    padding-bottom: 51px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin: auto;
-    max-width: 570px;
+    position: absolute;
+    width: 570px;
+    background-color: $white;
+    margin-left: 110px;
+    margin-top: 95px;
+    padding-top: 66px;
+    padding-left: 67px;
+    padding-right: 89px;
+    padding-bottom: 51px;
   }
 }
 
 .cooperation__header {
+  width: 140px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $black-header;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__text {
+  width: 140px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
   color: $gray--dark;
+  margin-top: -4px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.cooperation__map {
+  min-width: 100vw;
 }

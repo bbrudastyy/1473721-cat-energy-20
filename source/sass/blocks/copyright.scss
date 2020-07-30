@@ -1,13 +1,28 @@
 .copyright {
   margin-right: 20px;
   margin-left: 20px;
-  background-color: $gray--light;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    margin: 0;
+    margin-top: 65px;
+    margin-bottom: 62px;
+  }
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+
+  &:hover,
+  &:active {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__title {
@@ -17,4 +32,10 @@
   font-size: 16px;
   line-height: 18px;
   color: $gray--dark;
+}
+
+.copyright__img {
+  margin-top: -7px;
+  width: 27px;
+  height: 34px;
 }
