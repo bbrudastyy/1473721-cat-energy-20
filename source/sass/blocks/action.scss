@@ -94,7 +94,7 @@
       color: $gray--light;
     }
 
-    @media  (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       right: 65px;
     }
   }
@@ -182,7 +182,6 @@
 
   &--powder::after {
     background: url("../../img/advantage-powder@1x.png") no-repeat;
-
   }
 
   &--change::after {
