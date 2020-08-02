@@ -9,6 +9,12 @@
 
   @media (min-width: $tablet-width) {
     min-width: 440px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width:  $desktop-width) {
+    min-width: 480px;
+    padding-bottom: 40px;
   }
 }
 
@@ -22,6 +28,10 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+
+    &--active {
+      border-bottom: 2px solid $green;
+    }
   }
 
   @media (min-width: $tablet-width + 47px) {
@@ -31,6 +41,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 0;
+
+    &--active-index {
+      border-bottom: 2px solid $white;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -56,19 +72,11 @@
     &:active {
       opacity: 0.3;
     }
-
-    &--active {
-      border-bottom: 1px solid $green;
-    }
   }
 }
 
 .site-list__link-index {
   @media (min-width: $desktop-width) {
     color: $white;
-
-    &--active {
-      border-bottom: 1px solid $white;
-    }
   }
 }

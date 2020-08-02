@@ -1,3 +1,14 @@
+.cooperation__coopeartion {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin: auto;
+  }
+}
+
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
@@ -17,8 +28,8 @@
     position: absolute;
     width: 570px;
     background-color: $white;
-    margin-left: 110px;
-    margin-top: 95px;
+    top: 95px;
+    margin: 0;
     padding-top: 66px;
     padding-left: 67px;
     padding-right: 89px;
@@ -35,10 +46,18 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 171px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 23px;
+
+    br {
+      display: block;
+    }
   }
 }
 

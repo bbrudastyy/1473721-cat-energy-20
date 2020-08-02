@@ -2,12 +2,12 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    margin-top: 62px - 17px;
+    margin-top: 59px - 17px;
     color: $black;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 127px;
+    margin-top: 75px;
   }
 }
 
@@ -79,7 +79,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     margin-left: 118px - 30px;
     font-size: 20px;
     line-height: 20px;
@@ -106,13 +106,14 @@
     margin-top: 0;
     width: 709px;
     height: 609px;
+    padding-left: 80px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: -250px;
-    margin-left: 558px;
-    width: 552px;
+    top: -280px;
+    margin-left: 510px;
+    width: 600px;
     height: 499px;
   }
 }
@@ -120,6 +121,7 @@
 .program__link {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 4px;
   min-height: 40px;
   vertical-align: middle;
   display: inline-block;
@@ -133,8 +135,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 224px;
-    margin-left: 83px;
+    top: 230px;
+    margin-left: 82px;
     margin-right: auto;
     font-size: 20px;
     line-height: 0px;
