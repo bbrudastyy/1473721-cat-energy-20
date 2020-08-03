@@ -1,9 +1,20 @@
 .association {
+  background-color: $gray--light;
+}
+
+.association__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: $gray--light;
+  margin: auto;
+  padding-top: 27px;
+  padding-bottom: 23px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -13,18 +24,35 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    max-width: $desktop-width;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
 .association__logo {
   background-color: $gray--light;
-}
-
-.association__wrapper {
+  width: 128px;
+  height: 24px;
   margin: auto;
 
-  @media (min-width: $desktop-width) {
-    margin: auto;
-    max-width: $desktop-width;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 66px;
+  }
+}
+
+.association__logo-svg {
+  width: 128px;
+  height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

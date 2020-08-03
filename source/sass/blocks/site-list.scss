@@ -1,5 +1,21 @@
 .site-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100vw;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 440px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+    padding-bottom: 40px;
+  }
 }
 
 .site-list__item {
@@ -8,9 +24,59 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  @media (min-width: $tablet-width + 47px) {
+    margin-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 0;
+
+    &--active-index {
+      border-bottom: 2px solid $white;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .site-list__link {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+  border-top: 1px solid $white--lighten;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.site-list__link-index {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

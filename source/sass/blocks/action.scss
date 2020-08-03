@@ -1,5 +1,10 @@
-.action__wrapper {
-  margin-left: 20px;
+.action {
+  counter-reset: section;
+
+  @media (min-width: $tablet-width) {
+    min-height: 700px;
+    border-bottom: 1px solid $white--lighten;
+  }
 
   @media (min-width: $desktop-width) {
     margin: auto;
@@ -7,10 +12,40 @@
   }
 }
 
+.action__wrapper {
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
 .action__header {
+  margin-top: 7px;
+  margin-bottom: 38px;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-bottom: 183px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 71px;
+    margin-bottom: 183px;
+  }
 }
 
 .action__list {
@@ -20,33 +55,140 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 225px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    column-gap: 65px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .action__item {
-  width: 279px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-  }
+  position: relative;
+  margin-right: 22px;
+  margin-bottom: 20px;
+  min-height: 60px;
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    width: 250px;
+    margin-right: 10px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      z-index: -1;
+      top: -150px;
+      right: 147px;
+      width: 70px;
+      height: 230px;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray--light;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 65px;
+    }
   }
 }
 
 .action__text {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 80px;
+  margin-right: auto;
   color: $gray--dark;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    padding-right: 100px;
+
+    br {
+      display: block;
+    }
+
+    &--time {
+      padding-right: 80px;
+    }
+  }
+
+  @media (min-width: $tablet-width + 1px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 265px;
+    padding-right: 20px;
+
+
+    br {
+      display: block;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -80px;
+    background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -111px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -75px;
+    top: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      top: -95px;
+    }
+  }
+
+  &--helpful::after {
+    background: url("../../img/advantage-leaf@1x.png") no-repeat;
+  }
+
+  &--powder::after {
+    background: url("../../img/advantage-powder@1x.png") no-repeat;
+  }
+
+  &--change::after {
+    background: url("../../img/advantage-dining@1x.png") no-repeat;
+  }
+
+  &--time::after {
+    background: url("../../img/advantage-clock@1x.png") no-repeat;
+  }
 }
