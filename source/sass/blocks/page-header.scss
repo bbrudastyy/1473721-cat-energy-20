@@ -12,8 +12,12 @@
 }
 
 .page-header__wrapper-logo {
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   margin-right: 94px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;

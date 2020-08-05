@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     margin: auto;
     max-width: $desktop-width;
+    border: none;
   }
 }
 
@@ -17,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 30px;
-    padding-bottom: 47px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +28,7 @@
 }
 
 .action__header {
-  margin-top: 7px;
+  margin-top: 6px;
   margin-bottom: 38px;
   font-weight: normal;
   font-size: 36px;
