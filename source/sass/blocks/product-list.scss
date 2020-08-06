@@ -25,6 +25,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
     row-gap: 143px;
+    margin-bottom: 71px;
   }
 }
 
@@ -49,8 +50,8 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    margin-right: 39px;
-    margin-left: 37px;
+    margin-right: 37px;
+    margin-left: 39px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -63,7 +64,7 @@
 }
 
 .product-list__header {
-  margin-top: 27px;
+  margin-top: 25px;
   margin-bottom: 40px;
   margin-left: 20px;
   margin-right: auto;
@@ -74,7 +75,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 46px;
+    margin-top: 43px;
     margin-left: 30px;
     margin-right: auto;
     margin-bottom: 164px;
@@ -183,7 +184,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
+    padding-bottom: 19px;
   }
 
   &:hover {
@@ -210,6 +212,8 @@
   align-items: center;
   padding-top: 79px;
   padding-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 164px;

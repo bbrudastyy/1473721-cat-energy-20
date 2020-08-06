@@ -1,5 +1,44 @@
 .cat-info {
-  border-bottom: 1px solid $gray-border;
+  width: 100%;
+  border: none;
+  padding: 0 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    padding-right: 80px;
+  }
+}
+
+.cat-info__wrapper {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+
+    &:last-child {
+      margin-bottom: 78px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .cat-info__text {
@@ -8,14 +47,47 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $gray--dark;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-info__input {
+  margin-left: 15px;
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 14px;
+  padding-bottom: 14px;
+
   &::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     color: $gray--dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-bottom: 12px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+    padding-top: 16px;
+    padding-left: 18px;
+
+    &--weight {
+      margin-left: 22px;
+    }
   }
 }

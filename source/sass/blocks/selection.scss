@@ -1,11 +1,52 @@
 .selection {
-  padding-left: 19px;
-}
-
-.selection__wrapper {
   @media (min-width: $desktop-width) {
     margin: auto;
     max-width: $desktop-width;
+  }
+}
+
+.selection__wrapper-global {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.selection__wrapper {
+  width: 100%;
+  border-bottom: 1px solid $gray-border;
+
+  &--owner {
+    padding-top: 26px;
+    border: none;
+  }
+
+  &--comment {
+    border: none;
+  }
+
+  &--additionally {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &--target {
+      padding-left: 70px;
+    }
+
+    &--owner {
+      padding-top: 77px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--target {
+      padding-left: 0;
+    }
+
+    &--owner {
+      padding-top: 71px;
+    }
   }
 }
 
@@ -18,22 +59,31 @@
   }
 }
 
-.selection__header {
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-  color: $black;
-}
 
-.selection__text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $black;
+.selection__submit {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 71px;
+    margin-right: 70px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .selection__btn {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -41,6 +91,20 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 64px;
+    font-size: 20px;
+    line-height: 0px;
+    margin-right: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    margin-right: 83px;
+    margin-bottom: 22px;
+  }
 }
 
 .selection__required {
@@ -49,17 +113,17 @@
   line-height: 16px;
   text-align: center;
   color: $black;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.selection__submit {
-  display: flex;
-  flex-direction: column;
+  margin-top: 21px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 22px;
   }
 }

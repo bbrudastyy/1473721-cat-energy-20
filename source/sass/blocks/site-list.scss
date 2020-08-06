@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 440px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +43,11 @@
     line-height: 30px;
     margin-right: 0;
 
+    &--active {
+      border-bottom: 2px solid $green;
+      padding-bottom: 6px;
+    }
+
     &--active-index {
       border-bottom: 2px solid $white;
       padding-bottom: 10px;
@@ -63,6 +68,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    padding-top: 2px;
 
     &:hover {
       opacity: 0.6;
@@ -72,6 +78,10 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
   }
 }
 
