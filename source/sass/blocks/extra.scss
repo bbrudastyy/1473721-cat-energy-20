@@ -223,6 +223,14 @@
   background-color: $green;
   color: $white;
 
+  &:hover {
+    background-color: $green--dark;
+  }
+
+  &:active .extra__btn-span {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 100%;
     margin-bottom: 28px;

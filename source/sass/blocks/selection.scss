@@ -1,10 +1,3 @@
-.selection {
-  @media (min-width: $desktop-width) {
-    margin: auto;
-    width: $desktop-width;
-  }
-}
-
 .selection__wrapper-global {
   padding-left: 20px;
   padding-right: 20px;
@@ -14,64 +7,97 @@
   width: 100%;
   border-bottom: 1px solid $gray-border;
 
-  &--owner {
-    padding-top: 26px;
-    border: none;
+  &--info {
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
-  &--comment {
-    border: none;
-  }
-
-  &--additionally {
-    border: none;
-  }
-
-  @media (min-width: $tablet-width) {
+  &--target {
     border: none;
 
-    &--target {
+    @media (min-width: $tablet-width) {
       padding-left: 70px;
     }
 
-    &--owner {
-      padding-top: 77px;
+    @media (min-width: $desktop-width) {
+      padding: 0;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &--target {
-      padding-left: 0;
-    }
+  &--owner {
+    padding-top: 26px;
+    border: none;
 
-    &--owner {
+    @media (min-width: $tablet-width) {
       position: relative;
-      // width: 200%;
-      padding: 0;
-      // margin-left: auto;
-      // margin-right: auto;
-      // margin: 0 auto;
-      padding-top: 71px;
+      padding-top: 77px;
 
       &::before {
         position: absolute;
         content: "";
         z-index: -1;
-        right: -20px;
-        width: 200%;
+        width: 100%;
         height: 2px;
-        top: 16px;
+        top: 99px;
         background-color: $green;
+      }
+    }
 
-        @media (min-width: $tablet-width) {
-          top: 92px;
-          width: 200%;
-          // right: 0;
-        }
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      padding-top: 71px;
 
-        @media (min-width: $desktop-width) {
-          // display: none;
+      &::before {
+        top: 93px;
+      }
+    }
+  }
+
+  &--comment {
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        height: 2px;
+        top: 22px;
+        background-color: $green;
+      }
+
+      @media (min-width: $desktop-width) {
+        &::before {
+          top: 21;
         }
+      }
+    }
+  }
+
+  &--additionally {
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        height: 2px;
+        top: 22px;
+        background-color: $green;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        top: 23px;
       }
     }
   }
@@ -82,7 +108,11 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     flex-direction: row;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin: 0 auto;
   }
 }
 
@@ -102,8 +132,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 110px;
+    width: $desktop-width;
   }
 }
 
