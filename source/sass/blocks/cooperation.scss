@@ -11,6 +11,7 @@
 }
 
 .cooperation__wrapper {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   margin-right: 19px;
@@ -89,9 +90,21 @@
 }
 
 .cooperation__map {
+  z-index: -1;
   width: 100%;
+  height: 362px;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  &--none {
+    display: none;
+    width: 100%;
+    height: 362px;
+
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
   }
 }

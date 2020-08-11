@@ -78,6 +78,10 @@
   @media (min-width: $desktop-width) {
     width: 250px;
     margin-right: 10px;
+
+    &:last-child {
+      padding-bottom: 281px;
+    }
   }
 
   &::after {
@@ -191,5 +195,23 @@
 
   &--time::after {
     background: url("../../img/advantage-clock@1x.png") no-repeat;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--helpful::after {
+      background: url("../../img/advantage-leaf@2x.png") no-repeat contain;
+    }
+
+    &--powder::after {
+      background: url("../../img/advantage-powder@2x.png") no-repeat contain;
+    }
+
+    &--change::after {
+      background: url("../../img/advantage-dining@2x.png") no-repeat contain;
+    }
+
+    &--time::after {
+      background: url("../../img/advantage-clock@2x.png") no-repeat contain;
+    }
   }
 }

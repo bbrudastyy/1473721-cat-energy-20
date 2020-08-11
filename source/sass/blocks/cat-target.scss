@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 110px;
+    width: 570px;
   }
 }
 
@@ -47,6 +48,7 @@
 .cat-target__label {
   position: relative;
   padding-left: 30px;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -57,6 +59,16 @@
     left: 0;
     border: 1px solid $gray--lighten;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 1px solid $gray-border__radio;
+  }
+
+  &:active::before,
+  &:active::after,
+  &:active {
+    opacity: 0.3;
   }
 
   &::after {
@@ -77,6 +89,7 @@
     &::before,
     &::after {
       margin-left: 28px;
+      cursor: pointer;
     }
 
     &::before {
