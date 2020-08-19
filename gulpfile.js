@@ -5,7 +5,6 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const gulpCopy = require("gulp-copy");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
@@ -51,7 +50,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html"));
 }
 
 exports.default = gulp.series(
@@ -105,19 +104,25 @@ const clean = () => {
 
 exports.clean = clean;
 
+//HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(gulp.dest("./build"))
+  .pipe(sync.stream());
+}
+
+exports.html = html;
+
 //Build
 
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "sprite",
-  "html"
-);
+const build = gulp.series(clean, copy, styles, sprite, html);
 
 exports.build = build;
 
-gulp.task("build", gulp.series("clean", "copy", "styles", "sprite", "html"));
-gulp.task("start", gulp.series("build", "start"));
 
+// Start
 
+const start = gulp.series(build, server, watcher);
+
+exports.start = start;
