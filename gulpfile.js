@@ -10,6 +10,8 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const concat = require('gulp-concat');
+const uglyfly = require('gulp-uglyfly');
 
 // Styles
 
@@ -22,6 +24,9 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream())
     .pipe(rename("style-min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -87,7 +92,9 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/*.js"
+    // "source/js/scrypt.js",
+    // "source/js/scrypt-min.js"
   ], {
     base: "source"
   })
@@ -113,6 +120,29 @@ const html = () => {
 }
 
 exports.html = html;
+
+//Concat
+// const concats = () => {
+//   return gulp.src('source/js/*.js')
+//   .pipe(concat('scrypt.js'))
+//   .pipe(gulp.dest('source/js'));
+//   // .pipe(sync.stream());
+// }
+
+// exports.concats = concats;
+
+//MinJs
+
+// const minJs = () => {
+//   return gulp.src('source/js/scrypt.js')
+
+//   .pipe(uglyfly("scrypt-min.js"))
+//   .pipe(rename("scrypt-min.js"))
+//   .pipe(gulp.dest('source/js'));
+//   .pipe(sync.stream());
+// }
+
+// exports.minJs = minJs;
 
 //Build
 

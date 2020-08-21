@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style-min.css">
+  <link rel="stylesheet" href="css/style-min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -60,11 +60,11 @@
             <fieldset class="selection__cat-info cat-info">
               <div class="cat-info__wrapper">
                 <label for="name"><span class="cat-info__text">Имя:<sup>*</sup></span></label>
-                <input type="text" class="cat-info__input" id="name" name="cat-name" placeholder="Барсик" required>
+                <input type="text" class="cat-info__input cat-info__input--name form-required" id="name" name="cat-name" placeholder="Барсик" required>
               </div>
               <div class="cat-info__wrapper">
                 <label for="weight"><span class="cat-info__text">Вес (кг):<sup>*</sup></span></label>
-                <input type="text" class="cat-info__input cat-info__input--weight" id="weight" name="cat-weight"
+                <input type="text" class="cat-info__input cat-info__input--weight form-required" id="weight" name="cat-weight"
                   placeholder="7" required>
               </div>
               <div class="cat-info__wrapper">
@@ -99,7 +99,7 @@
             <div class="cat-owner__wrapper-data">
               <div class="cat-owner__wrapper">
                 <label for="cat-owner-name"><span class="cat-owner__text">E-mail:<sup>*</sup></span></label>
-                <input type="text" class="cat-owner__input" id="cat-owner-name" name="onwer-name"
+                <input type="text" class="cat-owner__input cat-owner__input--mail form-required" id="cat-owner-name" name="onwer-name"
                   placeholder="kuklachev@gmail.com" required>
                 <svg class="cat-owner__icon cat-owner__icon--mail" width="20" height="14">
                   <use xlink:href="sprite.svg#sprite-icon-mail"></use>
@@ -107,7 +107,7 @@
               </div>
               <div class="cat-owner__wrapper">
                 <label for="cat-owner-phone"><span class="cat-owner__text">Телефон:<sup>*</sup></span></label>
-                <input type="text" class="cat-owner__input cat-owner__input--phone" id="cat-owner-phone"
+                <input type="text" class="cat-owner__input cat-owner__input--phone form-required" id="cat-owner-phone"
                   name="onwer-phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="cat-owner__icon cat-owner__icon--phone" width="20" height="14">
                   <use xlink:href="sprite.svg#sprite-icon-phone"></use>
@@ -225,6 +225,7 @@
     </div>
   </footer>
   <script src="js/main-nav.js"></script>
+  <script src="js/form.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=<0e5a847d-8afb-471b-8376-1501d99e79c0>&lang=ru_RU"
     type="text/javascript"></script>
   <script src="js/map.js"></script>
