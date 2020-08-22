@@ -1,15 +1,17 @@
 var form = document.querySelector(".selection__form");
-var validateBtn = form.querySelector(".selection__btn");
-var requireds = form.querySelectorAll(".form-required");
+if (form){
+  var validateBtn = form.querySelector(".selection__btn");
+  var requireds = form.querySelectorAll(".form-required");
 
-validateBtn.addEventListener('click', function (event) {
-  event.preventDefault();
+  validateBtn.addEventListener('click', function (event) {
+    event.preventDefault();
 
-  for (var i = 0; i < requireds.length; i++) {
-    requireds[i].classList.remove("error");
-    if (!requireds[i].value) {
-      requireds[i].classList.add("error");
-      window.scrollTo(0, 0);
+    for (var i = 0; i < requireds.length; i++) {
+      requireds[i].classList.remove("error");
+      if (!requireds[i].value) {
+        requireds[i].classList.add("error");
+        window.scrollTo(0, 0);
+      }
     }
+  });
   }
-});
