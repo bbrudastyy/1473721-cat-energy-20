@@ -25,6 +25,7 @@
   position: absolute;
   width: 0;
   height: 0;
+  appearance: none;
 }
 
 .cat-target__text {
@@ -38,6 +39,10 @@
   margin-left: 15px;
   padding-top: 6px;
   padding-bottom: 6px;
+
+  &:active {
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
