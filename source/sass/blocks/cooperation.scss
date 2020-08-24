@@ -69,23 +69,24 @@
   color: $gray--dark;
   margin-top: -4px;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     width: 159px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-
-    br {
-      display: block;
-    }
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.cooperation__text-city {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
   }
 }
 

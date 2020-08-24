@@ -80,6 +80,10 @@
 .social__svg {
   fill: $gray;
 
+  &:hover {
+    fill: $green;
+  }
+
   &--vkontakte {
     width: 23px;
     height: 25px;

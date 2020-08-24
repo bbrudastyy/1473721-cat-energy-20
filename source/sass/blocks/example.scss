@@ -452,6 +452,18 @@
       cursor: pointer;
     }
 
+    &::-moz-range-thumb {
+      position: relative;
+      width: 34px;
+      appearance: none;
+      height: 34px;
+      border-radius: 50%;
+      background: radial-gradient($green, $green 20%, $white 20%);
+      border: 1px solid $gray--lighten;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      cursor: pointer;
+    }
+
     &::-webkit-slider-thumb:hover,
     &::-webkit-slider-thumb:focus {
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));

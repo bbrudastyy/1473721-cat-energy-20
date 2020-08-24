@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Богдан Котов](https://up.htmlacademy.ru/adaptive/20/user/1473721).
-* Наставник: [Максим Прусаков](https://up.htmlacademy.ru/adaptive/20/user/83559).
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
 
 ---
 

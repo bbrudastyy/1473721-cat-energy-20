@@ -103,15 +103,15 @@
                 <input type="text" class="cat-owner__input cat-owner__input--mail form-required" id="cat-owner-name" name="onwer-name"
                   placeholder="kuklachev@gmail.com" required>
                 <svg class="cat-owner__icon cat-owner__icon--mail" width="20" height="14">
-                  <use xlink:href="sprite.svg#sprite-icon-mail"></use>
+                  <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
                 </svg>
               </div>
               <div class="cat-owner__wrapper">
                 <label for="cat-owner-phone"><span class="cat-owner__text">Телефон:<sup>*</sup></span></label>
                 <input type="text" class="cat-owner__input cat-owner__input--phone form-required" id="cat-owner-phone"
                   name="onwer-phone" placeholder="8 (960) 900-60-90" required>
-                <svg class="cat-owner__icon cat-owner__icon--phone" width="20" height="14">
-                  <use xlink:href="sprite.svg#sprite-icon-phone"></use>
+                <svg class="cat-owner__icon cat-owner__icon--phone " width="20" height="14">
+                  <use xlink:href="img/sprite.svg#sprite-icon-phone"></use>
                 </svg>
               </div>
             </div>
@@ -119,8 +119,8 @@
         </div>
         <div class="selection__wrapper selection__wrapper--comment">
           <fieldset class="selection__comment comment">
-            <legend class="comment__header"><span class="cat-owner__header-wrapper">Комментарий</span></legend>
-            <label class="visually-hidden" for="comment-text"></label>
+            <legend class="comment__header"><span class="comment__header-wrapper">Комментарий</span></legend>
+            <label class="visually-hidden" for="comment-text"><span class="visually-hidden">Комментарий</span></label>
             <div class="comment__wrapper">
               <textarea class="comment__text" name="comment-text" id="comment-text" cols="30" rows="10"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -129,7 +129,7 @@
         </div>
         <div class="selection__wrapper selection__wrapper--additionally">
           <fieldset class="selection__additionally additionally">
-            <legend class="additionally__header"><span class="cat-owner__header-wrapper">Дополнительно</span></legend>
+            <legend class="additionally__header"><span class="additionally__header-wrapper">Дополнительно</span></legend>
             <ul class="additionally__list">
               <li class="additionally__item"><input type="checkbox" class="additionally__check" id="sugar"
                   name="sugar-substitute" checked>
@@ -161,7 +161,7 @@
         <div class="cooperation__coopeartion">
           <div class="cooperation__wrapper">
             <p class="cooperation__header">Приглашаем<br> к сотрудничеству дилеров!</p>
-            <address class="cooperation__text">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</address>
+            <address class="cooperation__text">ул. Большая Конюшенная, д. 19/8<p class="cooperation__text-city">Санкт-Петербург</p></address>
           </div>
         </div>
         <div id="map" class="cooperation__map cooperation__map--none"></div>
@@ -225,8 +225,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<0e5a847d-8afb-471b-8376-1501d99e79c0>&lang=ru_RU"
-    type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/script-min.js"></script>
 </body>
 
