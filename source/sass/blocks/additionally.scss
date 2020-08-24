@@ -18,27 +18,6 @@
 .additionally__header-wrapper {
   position: relative;
   display: flex;
-
-  &::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    right: -20px;
-    width: 100%;
-    height: 2px;
-    top: 16px;
-    background-color: $green;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-      width: 200%;
-      right: -70px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -110px;
-    }
-  }
 }
 
 .additionally__header {

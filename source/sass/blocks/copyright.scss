@@ -16,8 +16,7 @@
   justify-content: space-between;
   text-decoration: none;
 
-  &:hover,
-  &:active {
+  &:hover .copyright__img {
     fill: $green;
   }
 
